@@ -16,13 +16,13 @@ public class BookController {
     @Autowired
     private BookService bookService;
 
-    @GetMapping("/book")
-    public List<Integer> books(){
-        List<Integer> list = new ArrayList<>();
-        log.info("master db numbers is {}",bookService.master());
-        list.add(bookService.master());
-        log.info("slave db numbers is {}",bookService.slave());
-        list.add(bookService.slave());
-        return list;
-    }
+    //@GetMapping("/book")
+    //public List<Integer> books(){
+    //    List<Integer> list = new ArrayList<>();
+    //    log.info("master db numbers is {}",bookService.master());
+    //    list.add(bookService.master());
+    //    log.info("slave db numbers is {}",bookService.slave());
+    //    list.add(bookService.slave());
+    //    return list;
+    //}
 }
